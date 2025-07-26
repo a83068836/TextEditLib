@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "gvQwHDfv9VY=",
+  "success": true,
+  "projectFilePath": "E:\\C\\C\\Components\\TextEditLib\\TextEditLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\18175\\.nuget\\packages\\dirkster.mlib\\1.3.1.2\\dirkster.mlib.1.3.1.2.nupkg.sha512",
+    "C:\\Users\\18175\\.nuget\\packages\\dirkster.unitcombolib\\1.1.0\\dirkster.unitcombolib.1.1.0.nupkg.sha512",
+    "C:\\Users\\18175\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.135\\microsoft.xaml.behaviors.wpf.1.1.135.nupkg.sha512"
+  ],
+  "logs": []
+}

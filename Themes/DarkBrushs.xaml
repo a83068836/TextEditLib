@@ -1,0 +1,75 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:TextEditLib.Themes"
+    xmlns:options="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+    xmlns:reskeys="clr-namespace:TextEditLib.Themes"
+    >
+    <!-- Accent Color Brush Definition
+       - Look for references on ControlAccentBrushKey to find where this is being set in code -->
+    <Color x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type reskeys:ResourceKeys},
+           ResourceId=ControlAccentColorKey}">#1ba1e2</Color>
+
+    <SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type reskeys:ResourceKeys},
+                     ResourceId=ControlAccentBrushKey}"
+                     Color="{DynamicResource {x:Static reskeys:ResourceKeys.ControlAccentColorKey}}"
+                    options:Freeze="true" />
+
+    <SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type reskeys:ResourceKeys},
+                     ResourceId=EditorBackground}"
+                     Color="#1e1e1e"
+                     options:Freeze="true" />
+
+    <SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type reskeys:ResourceKeys},
+                     ResourceId=EditorForeground}"
+                     Color="#d4d4d4"
+                     options:Freeze="true" />
+
+    <SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type reskeys:ResourceKeys},
+                     ResourceId=EditorLineNumbersForeground}"
+                     Color="#858585"
+                     options:Freeze="true" />
+
+    <SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type reskeys:ResourceKeys},
+                     ResourceId=EditorSelectionBrush}"
+                     Color="#1d2e2e"
+                     Opacity="0.75"
+                     options:Freeze="true" />
+
+    <SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type reskeys:ResourceKeys},
+                     ResourceId=EditorSelectionBorder}"
+                     Color="#184f34"
+                     Opacity="0.75"
+                     options:Freeze="true" />
+
+    <SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type reskeys:ResourceKeys},
+                     ResourceId=EditorNonPrintableCharacterBrush}"
+                     Color="#2FFFFFFF"  
+                     options:Freeze="true" />
+
+    <SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type reskeys:ResourceKeys},
+                     ResourceId=EditorLinkTextForegroundBrush}"  
+                     Color="#FFAAAAFF"  
+                     options:Freeze="true" />
+
+    <!-- Current Line Highlighting Keys -->
+    <SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type reskeys:ResourceKeys},
+                     ResourceId=EditorCurrentLineBackgroundBrushKey}"
+                     Color="#1d2e2e"
+                     options:Freeze="true" />
+
+    <SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type reskeys:ResourceKeys},
+                     ResourceId=EditorCurrentLineBorderBrushKey}"
+                     Color="#184f34"
+                     Opacity=".6"
+                     options:Freeze="true" />
+
+    <!-- Style hyperlink displayed within text in text editor -->
+    <SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type reskeys:ResourceKeys},
+                     ResourceId=EditorLinkTextBackgroundBrush}"    Color="#18FFFFFF" options:Freeze="true" />
+    <SolidColorBrush x:Key="EditorSearchBackgroundBrush" Color="#2e2e2e" />
+    <SolidColorBrush x:Key="EditorSearchBorderBrush" Color="#7160e8" />
+    <SolidColorBrush x:Key="EditorSearchCloseBorderBrush" Color="#d6d6d6" />
+    <SolidColorBrush x:Key="EditorSearchDownBorderBrush" Color="#424242" />
+    <SolidColorBrush x:Key="EditorSearchHeightBackgroundBrush" Color="#653306" />
+</ResourceDictionary>
